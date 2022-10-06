@@ -67,7 +67,6 @@ class login extends React.Component {
             </button>
           </label>
         )}
-
       </div>
     );
   }
