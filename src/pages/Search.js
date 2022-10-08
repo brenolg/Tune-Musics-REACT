@@ -12,7 +12,7 @@ class Search extends React.Component {
       artistData: [],
       loading: false,
       responseApi: false,
-      savedInput: '',
+      // savedInput: '',
     };
   }
 
@@ -21,13 +21,13 @@ class Search extends React.Component {
     this.setState({ loading: true });
 
     const response = await searchAlbumsAPI(searchA);
-    this.setState({
-      savedInput: searchA,
+    this.setState((prev) => ({
+      savedInput: prev.searchA,
       searchA: '',
       artistData: response,
       loading: false,
       responseApi: true,
-    });
+    }));
   };
 
   hadleButton = () => {
@@ -51,7 +51,8 @@ class Search extends React.Component {
       buttonDisabled,
       loading, artistData,
       responseApi,
-      savedInput } = this.state;
+      savedInput,
+    } = this.state;
 
     return (
 
@@ -83,30 +84,37 @@ class Search extends React.Component {
           )}
         ;
 
-        {responseApi && artistData.length > 0 === true ? (
+        {responseApi && artistData.length > 0 === true
+          ? (
+            <div>
+              <p>{`Resultado de álbuns de: ${savedInput}`}</p>
 
-          artistData.map((album) => (
-            <>
-              <p>
-                {`Resultado de álbuns de: ${album.artistName}`}
+              {artistData.map((album, index) => (
+                <>
+                  <li key={ album.collectionId } />
 
-              </p>
-              <li key={ album.collectionId }>
-                <img alt={ album.collectionId } src={ album.artworkUrl100 } />
-                <p>{album.collectionName}</p>
-                <p>{album.artistName}</p>
-                <Link
-                  to={ `/album/${album.collectionId}` }
-                  data-testid={ `link-to-album-${album.collectionId}` }
-                />
-              </li>
+                  <li key={ index }>
+                    <img alt={ album.collectionId } src={ album.artworkUrl100 } />
+                    <p>{album.collectionName}</p>
+                    <p>{album.artistName}</p>
+                    <Link
+                      to={ `/album/${album.collectionId}` }
+                      data-testid={ `link-to-album-${album.collectionId}` }
+                    >
+                      Album
 
-            </>
+                    </Link>
+                  </li>
 
-          )))
+                </>
+
+              ))}
+            </div>
+          )
           : <p>Nenhum álbum foi encontrado</p>}
         ;
       </div>
+
     );
   }
 }
