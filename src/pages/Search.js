@@ -60,7 +60,7 @@ class Search extends React.Component {
 
         <Header />
 
-        {loading === true ? (<p>Carregando</p>)
+        {loading ? (<p>Carregando</p>)
           : (
             <>
               <input
