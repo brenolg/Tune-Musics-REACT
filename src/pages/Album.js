@@ -30,6 +30,7 @@ class Album extends React.Component {
 
   render() {
     const { AlbumMusic, albumData } = this.state;
+
     return (
 
       <div data-testid="page-album">
