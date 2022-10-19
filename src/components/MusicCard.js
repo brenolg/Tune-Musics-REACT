@@ -16,7 +16,7 @@ class MusicCard extends React.Component {
     try {
       const favoriteSongs = await getFavoriteSongs();
       const favSongsIdList = favoriteSongs.map((song) => song.trackId);
-      this.setState((current) => ({ ...current, favSongsIdList }));
+      this.setState((prev) => ({ ...prev, favSongsIdList }));
     } catch (error) {
       console.log(error);
     }
