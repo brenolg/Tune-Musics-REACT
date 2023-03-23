@@ -36,7 +36,7 @@ Para instalar e executar o projeto localmente, siga os seguintes passos:
 1. Clone o repositório usando 
 
 ```javascript
-git clone https://github.com/tryber/sd-025-b-project-trybetunes.git
+git clone git@github.com:brenolg/tunes-musics.git
 ```
 2. Entre na pasta do projeto usando 
 
