@@ -1,10 +1,10 @@
 # Tunes Musics
 
-TrybeTunes é um projeto desenvolvido durante o curso da Trybe para praticar os conceitos de React e Redux. O objetivo é criar uma interface de streaming de música que permite ao usuário pesquisar por artistas e álbuns, adicionar músicas à sua playlist favorita e ouvir trechos das músicas disponíveis na API do iTunes.
+Tune Musics é um projeto desenvolvido durante o curso da Trybe para praticar os conceitos de React e Redux. O objetivo é criar uma interface de streaming de música que permite ao usuário pesquisar por artistas, adicionar músicas à sua playlist favorita e ouvir trechos das músicas disponíveis na API do iTunes.
 
 ## Funcionalidades
 
-- Pesquisar por artistas ou álbuns na barra de busca
+- formulário para pesquisar artistas
 - Visualizar os resultados da pesquisa em cards com informações básicas
 - Clicar em um card para ver mais detalhes sobre o artista ou álbum
 - Adicionar ou remover músicas à playlist favorita
