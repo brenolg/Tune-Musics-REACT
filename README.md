@@ -1,4 +1,4 @@
-# Tunes Musics
+# Tune Musics
 
 Tune Musics é um projeto desenvolvido durante o curso da Trybe para praticar os conceitos de React e Redux. O objetivo é criar uma interface de streaming de música que permite ao usuário pesquisar por artistas, adicionar músicas à sua playlist favorita e ouvir trechos das músicas disponíveis na API do iTunes.
 
