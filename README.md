@@ -2,6 +2,8 @@
 
 Tune Musics é um projeto desenvolvido durante o curso da Trybe para praticar os conceitos de React e Redux. O objetivo é criar uma interface de streaming de música que permite ao usuário pesquisar por artistas, adicionar músicas à sua playlist favorita e ouvir trechos das músicas disponíveis na API do iTunes.
 
+<img width="100%" src="tuneMusics.gif" />
+
 ## Funcionalidades
 
 - formulário para pesquisar artistas
@@ -11,15 +13,7 @@ Tune Musics é um projeto desenvolvido durante o curso da Trybe para praticar os
 - Ouvir trechos das músicas na playlist favorita
 - Ordenar a playlist favorita por nome ou duração
 
-<br/>
 
-<img width="100%" src="./src/images/starWars.gif" />
-
-<a	href="https://brenolg.github.io/star-wars-planets/"
-	target="_blank"
-	rel="noopener noreferrer"> Star Wars Planets Page
-<a/>
-* Trocar img e link
 
 <br/>
 
