@@ -30,7 +30,7 @@ Para instalar e executar o projeto localmente, siga os seguintes passos:
 1. Clone o repositório usando 
 
 ```javascript
-git clone git@github.com:brenolg/tunes-musics.git
+git clone git@github.com:brenolg/Tune-Musics-REACT.git
 ```
 2. Entre na pasta do projeto usando 
 
